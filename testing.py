@@ -14,7 +14,7 @@ soup = BeautifulSoup(response.content, "html.parser")
 # Adjust the selectors and extraction logic based on the structure of the website
 
 # Example: Extract all titles and dates within the div element
-div_elements = soup.find_all("div")  # Adjust the selector based on the div elements containing titles and dates
+div_elements = soup.find_all("div")  #wdawdawdawd Adjust the selector based on the div elements containing titles and dates
 
 for div_element in div_elements:
     title_element = div_element.find("div", class_="card-content--title")  # Adjust the selector for the title element
