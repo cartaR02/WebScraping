@@ -2,10 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 
 websites = {
-    "https://www.aerotek.com/en/about-us/news-and-events/news/2023/05/aeroteks-david-jordan-named-to-2023-sia-dei-influencers": {
+    "https://www.aerotek.com/en/about-us/news-and-events/news/2023/05/aeroteks-david-jordan-named-to-2023-sia-dei"
+    "-influencers": {
         "title_selector": "h1.acs-page-title",
         "date_selector": "p.acs-page-date",
-    },"https://www.fmc.com/en/news-media/company-news": {
+    }, "https://www.fmc.com/en/news-media/company-news": {
         "title_selector": "div.card-content--title",
         "date_selector": "div.byline-date",
     }
@@ -14,7 +15,7 @@ websites = {
 
 documents = {}  # Dictionary to store titles and dates
 
- # Iterate over the websites
+# Iterate over the websites
 for website, selectors in websites.items():
     # Send a GET request to the URL
     response = requests.get(website)
